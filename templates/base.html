@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Sami Elsayed's website</title>
+        <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    </head>
+    
+    <body>
+        <h1>My Personal Blog</h1>
+        <a href="{% url "blogIndex" %}">Home</a>
+        <hr>
+        {% block page_title %}{% endblock page_title %}
+        {% block page_content %}{% endblock page_content %}
+    </body>
+</html>
