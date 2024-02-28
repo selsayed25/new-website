@@ -9,10 +9,24 @@
     </head>
     
     <body>
-        <h1>My Personal Blog</h1>
-        <a href="{% url "blogIndex" %}">Home</a>
+        <h1>Sami Elsayed's website</h1>
+        <span>
+            <a href="{% url "blogIndex" %}">Home</a>
+            &nbsp
+            <a href="/about">About</a>
+            &nbsp
+            <a href="/contact">Contact</a>
+            &nbsp
+            <a href="/projects">Projects</a>
+            &nbsp
+            <a href="/blog">Blog</a>
+        </span>
         <hr>
         {% block page_title %}{% endblock page_title %}
         {% block page_content %}{% endblock page_content %}
     </body>
+    <footer>
+        <hr>
+        Note: This is a new website undergoing development. Expect things to not work properly.<br>Sami Elsayed © 2024
+    </footer>
 </html>
